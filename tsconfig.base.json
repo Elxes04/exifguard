@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@exifguard/seed-profiles": ["packages/seed-profiles/dist/index.d.ts"],
+      "@exifguard/coherency-engine": ["packages/coherency-engine/dist/index.d.ts"],
+      "@exifguard/wasm-exif": ["packages/wasm-exif/dist/index.d.ts"],
+      "@exifguard/database-schema": ["packages/database-schema/dist/index.d.ts"]
+    }
+  }
+}

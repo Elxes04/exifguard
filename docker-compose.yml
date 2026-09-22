@@ -1,0 +1,42 @@
+services:
+  exifguard-web:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.web
+      args:
+        - VITE_PUBLIC_API_URL=${VITE_PUBLIC_API_URL:-/api}
+    ports:
+      - "80"
+    restart: unless-stopped
+    environment:
+      - SERVICE_FQDN_EXIFGUARD_WEB_80
+      - NODE_ENV=production
+    depends_on:
+      - exifguard-api
+    networks:
+      - exifguard-net
+
+  exifguard-api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.api
+    ports:
+      - "8080"
+    restart: unless-stopped
+    volumes:
+      - exifguard_db_data:/app/data
+    environment:
+      - SERVICE_FQDN_EXIFGUARD_API_8080
+      - PORT=8080
+      - DB_PATH=/app/data/exifguard_public.db
+      - NODE_ENV=production
+    networks:
+      - exifguard-net
+
+volumes:
+  exifguard_db_data:
+    driver: local
+
+networks:
+  exifguard-net:
+    driver: bridge

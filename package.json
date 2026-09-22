@@ -1,0 +1,33 @@
+{
+  "name": "exifguard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Open-Source Free Self-Hostable EXIF Metadata Spoofing & Profile Cloning Suite",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "setup": "bash scripts/install.sh",
+    "dev": "npm run dev --workspace=apps/web",
+    "dev:web": "npm run dev --workspace=apps/web",
+    "dev:api": "npm run dev --workspace=apps/api",
+    "dev:all": "npm run build && (npm run dev:api & npm run dev:web)",
+    "build": "npm run build --workspace=packages/seed-profiles && npm run build --workspace=packages/coherency-engine && npm run build --workspace=packages/wasm-exif && npm run build --workspace=packages/database-schema && npm run build --workspace=apps/api && npm run build --workspace=apps/web",
+    "start": "node apps/api/dist/server.js",
+    "test": "npm run test --workspaces"
+  },
+  "keywords": [
+    "exif",
+    "privacy",
+    "anonymization",
+    "spoofing",
+    "metadata",
+    "security"
+  ],
+  "author": "ExifGuard Open Source Contributors",
+  "license": "AGPL-3.0-or-later",
+  "dependencies": {
+    "typescript": "^5.4.5"
+  }
+}

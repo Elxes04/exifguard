@@ -1,0 +1,52 @@
+{
+  "id": "canon_eos_r5",
+  "name": "Canon EOS R5 + RF 50mm F1.2 L USM",
+  "category": "Mirrorless",
+  "device": {
+    "make": "Canon",
+    "model": "Canon EOS R5",
+    "software": "Firmware Version 1.8.1",
+    "sensor_aspect_ratios": ["3:2", "1:1", "16:9", "4:3"]
+  },
+  "lens": {
+    "make": "Canon",
+    "model": "RF50mm F1.2 L USM",
+    "min_focal_length": 50.0,
+    "max_focal_length": 50.0,
+    "focal_length_35mm": 50,
+    "min_aperture": 1.2,
+    "max_aperture": 16.0
+  },
+  "coherency_rules": {
+    "iso_range": [100, 102400],
+    "shutter_speed_range": ["1/8000", "30"],
+    "supported_aspect_ratios": ["3:2", "1:1", "16:9", "4:3"],
+    "byte_order": "II"
+  },
+  "exif_tags": {
+    "Make": "Canon",
+    "Model": "Canon EOS R5",
+    "Software": "Firmware Version 1.8.1",
+    "LensMake": "Canon",
+    "LensModel": "RF50mm F1.2 L USM",
+    "FNumber": 1.2,
+    "FocalLength": 50.0,
+    "FocalLengthIn35mmFormat": 50,
+    "ExifVersion": "0232",
+    "ColorSpace": 1,
+    "SensingMethod": 2,
+    "MeteringMode": 5,
+    "ExposureProgram": 3,
+    "Flash": 16,
+    "SensitivityType": 1
+  },
+  "makernote_structure": {
+    "format": "Canon_RF",
+    "header_signature": "Canon\u0000\u0002",
+    "sample_tags": {
+      "0x0001": "CanonCameraSettings",
+      "0x0004": "CanonShotInfo",
+      "0x0093": "CanonFileInfo"
+    }
+  }
+}

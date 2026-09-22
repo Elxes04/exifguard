@@ -1,0 +1,50 @@
+{
+  "id": "google_pixel_7",
+  "name": "Google Pixel 7 (Main Camera)",
+  "category": "Smartphone",
+  "device": {
+    "make": "Google",
+    "model": "Pixel 7",
+    "software": "HDR+ 1.0.485",
+    "sensor_aspect_ratios": ["4:3", "16:9"]
+  },
+  "lens": {
+    "make": "Google",
+    "model": "Pixel 7 back camera 6.81mm f/1.85",
+    "min_focal_length": 6.81,
+    "max_focal_length": 6.81,
+    "focal_length_35mm": 25,
+    "min_aperture": 1.85,
+    "max_aperture": 1.85
+  },
+  "coherency_rules": {
+    "iso_range": [40, 6400],
+    "shutter_speed_range": ["1/12000", "1/2"],
+    "supported_aspect_ratios": ["4:3", "16:9"],
+    "byte_order": "II"
+  },
+  "exif_tags": {
+    "Make": "Google",
+    "Model": "Pixel 7",
+    "Software": "HDR+ 1.0.485",
+    "LensMake": "Google",
+    "LensModel": "Pixel 7 back camera 6.81mm f/1.85",
+    "FNumber": 1.85,
+    "FocalLength": 6.81,
+    "FocalLengthIn35mmFormat": 25,
+    "ExifVersion": "0232",
+    "ColorSpace": 1,
+    "SensingMethod": 2,
+    "MeteringMode": 2,
+    "ExposureProgram": 2,
+    "Flash": 16
+  },
+  "makernote_structure": {
+    "format": "Google_HDR",
+    "header_signature": "Google\u0000",
+    "sample_tags": {
+      "0x0001": "GCameraMotionPhoto",
+      "0x0002": "GCameraBurstID"
+    }
+  }
+}

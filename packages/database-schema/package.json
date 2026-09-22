@@ -1,0 +1,14 @@
+{
+  "name": "@exifguard/database-schema",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@exifguard/seed-profiles": "*",
+    "typescript": "^5.4.5"
+  }
+}

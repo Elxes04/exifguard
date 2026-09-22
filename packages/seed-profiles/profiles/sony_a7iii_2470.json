@@ -1,0 +1,52 @@
+{
+  "id": "sony_a7iii_2470",
+  "name": "Sony A7 III + FE 24-70mm F2.8 GM",
+  "category": "Mirrorless",
+  "device": {
+    "make": "Sony",
+    "model": "ILCE-7M3",
+    "software": "ILCE-7M3 v4.01",
+    "sensor_aspect_ratios": ["3:2", "16:9"]
+  },
+  "lens": {
+    "make": "Sony",
+    "model": "FE 24-70mm F2.8 GM",
+    "min_focal_length": 24.0,
+    "max_focal_length": 70.0,
+    "focal_length_35mm": 24,
+    "min_aperture": 2.8,
+    "max_aperture": 22.0
+  },
+  "coherency_rules": {
+    "iso_range": [50, 204800],
+    "shutter_speed_range": ["1/8000", "30"],
+    "supported_aspect_ratios": ["3:2", "16:9"],
+    "byte_order": "II"
+  },
+  "exif_tags": {
+    "Make": "Sony",
+    "Model": "ILCE-7M3",
+    "Software": "ILCE-7M3 v4.01",
+    "LensMake": "Sony",
+    "LensModel": "FE 24-70mm F2.8 GM",
+    "FNumber": 2.8,
+    "FocalLength": 50.0,
+    "FocalLengthIn35mmFormat": 50,
+    "ExifVersion": "0231",
+    "ColorSpace": 1,
+    "SensingMethod": 2,
+    "MeteringMode": 5,
+    "ExposureProgram": 3,
+    "Flash": 16,
+    "SensitivityType": 2
+  },
+  "makernote_structure": {
+    "format": "Sony_Type3",
+    "header_signature": "SONY DSC \u0000\u0000\u0000",
+    "sample_tags": {
+      "0x0010": "CameraInfo",
+      "0x0020": "FocusInfo",
+      "0x9050": "ShotInfo"
+    }
+  }
+}
